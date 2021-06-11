@@ -1,5 +1,5 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 
 
 def hello(request):
-    pass
+    return HttpResponse('hello')
