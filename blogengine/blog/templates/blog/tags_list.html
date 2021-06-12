@@ -7,6 +7,6 @@
     <h1 class="mb-5">Tags:</h1>
 
     {% for tag in tags %}
-        <h3>{{ tag.title }}</h3>
+        <a href="{% url 'tag-detail' tag.slug %}"><h3>{{ tag.title }}</h3></a>
     {% endfor %}
 {% endblock %}
