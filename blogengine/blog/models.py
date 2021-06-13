@@ -14,7 +14,7 @@ class Post(models.Model):
         return reverse('post-detail', kwargs={'slug': self.slug})
 
     def __str__(self):
-        return '{}'.format(self.title)
+        return self.title
 
 
 class Tag(models.Model):
